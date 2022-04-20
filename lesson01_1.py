@@ -11,6 +11,7 @@ def print_func(list_words):
         print(el, ', type =', type(el))
     print('-'*50)
 
+
 word_1 = "разработка"
 word_2 = "сокет"
 word_3 = "декоратор"

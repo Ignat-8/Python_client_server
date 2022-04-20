@@ -4,7 +4,7 @@
 Принудительно открыть файл в формате Unicode и вывести его содержимое.
 '''
 
-import locale
+from chardet import detect
 
 
 str_1 = 'сетевое программирование'
@@ -13,15 +13,18 @@ str_3 = 'декоратор'
 
 str_list = [str_1, str_2, str_3]
 
-with open('test_file.txt', 'w') as f:
+# записываем файл с кодировкой по умолчанию
+with open('test_file.txt', 'w') as file:
     for el in str_list:
-        f.write(el + '\n')
+        file.write(el + '\n')
 
-# # определение кодировки системы по умолчанию
+# узнаем кодировку файла
+with open('test_file.txt', 'rb') as file:
+    CONTENT = file.read()
+    ENCODING = detect(CONTENT)['encoding']
+    print('\nкодировка файла по умолчанию:', ENCODING, '\n')
 
-default_encoding = locale.getpreferredencoding()
-print(default_encoding)
-
-with open('test_file.txt', 'r', encoding='utf-8') as f:
-    for el in f:
+print('открытие файла в кодировке utf-8:\n')
+with open('test_file.txt', 'r', encoding='utf-8', errors="replace") as file:
+    for el in file:
         print(el)
