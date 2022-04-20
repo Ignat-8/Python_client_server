@@ -50,7 +50,7 @@ def get_data(file_list, os_list):
 def write_to_csv(file_list, os_list):
     main_data = get_data(file_list, os_list)
 
-    with open('main_data.csv', 'w', encoding='utf-8', newline='') as csv_file:
+    with open('main_data.csv', 'w', encoding='cp1251', newline='') as csv_file:
         F_WRITER = csv.writer(csv_file, quoting=csv.QUOTE_NONNUMERIC, delimiter=";")
         F_WRITER.writerows(main_data)
 # ----------------------------------------------------------------------------
