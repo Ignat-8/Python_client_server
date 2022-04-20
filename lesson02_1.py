@@ -42,17 +42,23 @@ def get_data(file_list, os_list):
                         # print(file_el, ',', match[1], ',', match[3])
 
         main_data.append(main_data_add)
+        os_prod_list = os_list['Изготовитель системы']['os_list']
+        os_name_list = os_list['Название ОС']['os_list']
+        os_code_list = os_list['Код продукта']['os_list']
+        os_type_list = os_list['Тип системы']['os_list']
 
-    return main_data
+    return main_data, os_prod_list, os_name_list, os_code_list, os_type_list
 # ----------------------------------------------------------------------------
 
 
 def write_to_csv(file_list, os_list):
-    main_data = get_data(file_list, os_list)
+    main_data, os_prod_list, os_name_list, os_code_list, os_type_list = get_data(file_list, os_list)
 
     with open('main_data.csv', 'w', encoding='cp1251', newline='') as csv_file:
         F_WRITER = csv.writer(csv_file, quoting=csv.QUOTE_NONNUMERIC, delimiter=";")
         F_WRITER.writerows(main_data)
+    
+    return main_data, os_prod_list, os_name_list, os_code_list, os_type_list
 # ----------------------------------------------------------------------------
 
 
@@ -81,4 +87,15 @@ os_list = {
     },
     }
 
-write_to_csv(file_list, os_list)
+main_data, os_prod_list, os_name_list, os_code_list, os_type_list = write_to_csv(file_list, os_list)
+# print()
+# print(main_data)
+# print()
+# print(os_prod_list)
+# print()
+# print(os_name_list)
+# print()
+# print(os_code_list)
+# print()
+# print(os_type_list)
+# print()
