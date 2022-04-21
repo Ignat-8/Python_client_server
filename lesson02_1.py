@@ -31,13 +31,7 @@ def get_data(file_list, os_list):
         i += 1  # т.к. нулевая строка в массиве main_data занята заголовком
         main_data_add =['', '', '', '']  # заполняем пустыми значениями, т.к. кол-во столбцов известно
 
-        # определение кодировки файла
-        with open(file_el, 'rb') as file :
-            CONTENT = file.read()
-            ENCODING = detect(CONTENT)['encoding']
-        print(ENCODING)
-
-        with open(file_el, encoding=ENCODING) as csv_file:
+        with open(file_el, encoding='cp1251') as csv_file:
             CONTENT = csv.reader(csv_file)
             for row in CONTENT:
                 for key in os_list:
@@ -61,7 +55,7 @@ def get_data(file_list, os_list):
 def write_to_csv(file_list, os_list):
     main_data, os_prod_list, os_name_list, os_code_list, os_type_list = get_data(file_list, os_list)
 
-    with open('main_data.csv', 'w', encoding='utf-8', newline='') as csv_file:
+    with open('main_data.csv', 'w', newline='') as csv_file:
         F_WRITER = csv.writer(csv_file, quoting=csv.QUOTE_NONNUMERIC, delimiter=";")
         F_WRITER.writerows(main_data)
     
