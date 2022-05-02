@@ -35,7 +35,7 @@ def main():
             raise ValueError
     except IndexError:
         server_address = cmnset.DEFAULT_ADDRESS
-        server_port = cmnset.DEFAUL_PORT
+        server_port = cmnset.DEFAULT_PORT
     except ValueError:
         print('Номер порта должен быть в диапазоне от 1024 до 65535')
         sys.exit(1)

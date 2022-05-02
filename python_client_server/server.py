@@ -1,5 +1,4 @@
 """ Программа сервера для получения приветствия от клиента и отправки ответа """
-
 import sys
 from socket import socket, AF_INET, SOCK_STREAM, SOL_SOCKET, SO_REUSEADDR
 import common.settings as cmnset
@@ -23,7 +22,7 @@ def main():
             if listen_port < 1024 and listen_port > 65535:
                 raise ValueError
         else:
-            listen_port = cmnset.DEFAUL_PORT
+            listen_port = cmnset.DEFAULT_PORT
     except IndexError:
         print('После параметра -\'p\' необходимо указать номер порта.')
         sys.exit(1)

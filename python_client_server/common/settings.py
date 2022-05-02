@@ -9,4 +9,4 @@ MAX_CONNECTIONS = 5
 
 # параметры подключения к серверу по умолчанию
 DEFAULT_ADDRESS = '127.0.0.1'
-DEFAUL_PORT = 7777
+DEFAULT_PORT = 7777
