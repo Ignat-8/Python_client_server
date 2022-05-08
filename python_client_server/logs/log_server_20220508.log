@@ -1,0 +1,4 @@
+2022-05-08 20:19:38,046 CRITICAL  conf_server_log.py Критическая ошибка
+2022-05-08 20:19:38,046 ERROR     conf_server_log.py Ошибка
+2022-05-08 20:19:38,053 DEBUG     conf_server_log.py Отладочная информация
+2022-05-08 20:19:38,053 INFO      conf_server_log.py Информационное сообщение
