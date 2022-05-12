@@ -1,7 +1,9 @@
+
+
 import sys
 import os
 import logging
-from datetime import datetime
+import logging.handlers
 sys.path.append('../')
 from common.settings import LOGGING_LEVEL
 
@@ -11,15 +13,13 @@ SERVER_FORMATTER = logging.Formatter('%(asctime)s %(levelname)-9s %(filename)s %
 
 # Подготовка имени файла для логирования
 PATH = os.path.dirname(os.path.abspath(__file__))
-date_now = datetime.now().strftime("%Y%m%d")
-PATH = os.path.join(PATH, f'log_server_{date_now}.log')
-
+PATH = os.path.join(PATH, f'log_server.log')
 
 # создаём потоки вывода логов
 STREAM_HANDLER = logging.StreamHandler(sys.stderr)
 STREAM_HANDLER.setFormatter(SERVER_FORMATTER)
 STREAM_HANDLER.setLevel(logging.ERROR)
-LOG_FILE = logging.FileHandler(PATH, encoding='utf8')
+LOG_FILE = logging.handlers.TimedRotatingFileHandler(PATH, encoding='utf8', interval=1, when='D')
 LOG_FILE.setFormatter(SERVER_FORMATTER)
 
 # создаём регистратор и настраиваем его
