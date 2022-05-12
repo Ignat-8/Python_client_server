@@ -1,0 +1,16 @@
+2022-05-08 20:05:11,683 CRITICAL  conf_client_log.py Критическая ошибка
+2022-05-08 20:05:11,684 ERROR     conf_client_log.py Ошибка
+2022-05-08 20:05:11,685 DEBUG     conf_client_log.py Отладочная информация
+2022-05-08 20:05:11,685 INFO      conf_client_log.py Информационное сообщение
+2022-05-08 20:06:20,984 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-08 20:06:20,984 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1652029580.9847224, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-08 20:06:20,984 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-08 20:06:20,984 DEBUG     client.py '200': 'ok'
+2022-05-08 20:06:20,984 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-08 20:06:43,884 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-08 20:06:43,884 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1652029603.8846526, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-08 20:06:43,884 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-08 20:06:43,884 DEBUG     client.py '200': 'ok'
+2022-05-08 20:06:43,884 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-08 20:07:45,789 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-08 20:07:45,789 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1652029665.7893045, 'user': {'account_name': 'Guest'}} для пользователя Guest
