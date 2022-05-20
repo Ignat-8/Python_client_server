@@ -1,5 +1,4 @@
 """ Программа сервера для отправки приветствия сервера и получения ответа """
-
 import sys
 import json
 import time
@@ -8,12 +7,13 @@ import logging
 import logs.conf_client_log
 import common.settings as cmnset
 import common.utils as cmnutils
+from common.decors import log
 
 
 # Инициализация клиентского логера
 CLIENT_LOGGER = logging.getLogger('client')
 
-
+@log
 def create_presence(user_name='Guest'):
     out = {
         "action": "presence",
@@ -26,6 +26,7 @@ def create_presence(user_name='Guest'):
     return out
 
 
+@log
 def process_ans(message):
     CLIENT_LOGGER.debug(f'Разбор сообщения от сервера: {message}')
     if 'response' in message:

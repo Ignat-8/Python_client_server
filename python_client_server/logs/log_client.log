@@ -14,3 +14,85 @@
 2022-05-08 20:06:43,884 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
 2022-05-08 20:07:45,789 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
 2022-05-08 20:07:45,789 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1652029665.7893045, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:36:12,235 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:36:12,251 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075372.235429, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:36:39,884 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:36:57,918 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:36:57,918 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075417.9182916, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:36:57,948 DEBUG     decors.py Была вызвана функция create_presence с параметрами (), {}Вызов из модуля __main__Вызов из функции main
+2022-05-20 22:36:57,948 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:36:57,948 DEBUG     client.py '200': 'ok'
+2022-05-20 22:36:57,948 DEBUG     decors.py Была вызвана функция process_ans с параметрами ({'response': 200},), {}Вызов из модуля __main__Вызов из функции main
+2022-05-20 22:36:57,948 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-20 22:37:05,935 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:37:05,935 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075425.9356017, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:37:05,958 DEBUG     decors.py Была вызвана функция create_presence с параметрами (), {}Вызов из модуля __main__Вызов из функции main
+2022-05-20 22:37:05,958 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:37:05,958 DEBUG     client.py '200': 'ok'
+2022-05-20 22:37:05,958 DEBUG     decors.py Была вызвана функция process_ans с параметрами ({'response': 200},), {}Вызов из модуля __main__Вызов из функции main
+2022-05-20 22:37:05,958 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-20 22:41:39,771 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:41:39,787 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075699.7875164, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:41:39,803 DEBUG     decors.py Вызвана функция create_presence с параметрами (), {}, из модуля __main__, из функции main
+2022-05-20 22:41:39,803 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:41:39,803 DEBUG     client.py '200': 'ok'
+2022-05-20 22:41:39,803 DEBUG     decors.py Вызвана функция process_ans с параметрами ({'response': 200},), {}, из модуля __main__, из функции main
+2022-05-20 22:41:39,803 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-20 22:42:24,605 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:42:24,605 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075744.605131, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:42:24,620 DEBUG     decors.py Вызвана функция create_presence с параметрами (), {}, из модуля __main__, из функции main
+2022-05-20 22:42:24,620 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:42:24,620 DEBUG     client.py '200': 'ok'
+2022-05-20 22:42:24,620 DEBUG     decors.py Вызвана функция process_ans с параметрами ({'response': 200},), {}, из модуля __main__, из функции main
+2022-05-20 22:42:24,620 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-20 22:42:53,921 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:42:53,921 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075773.9218743, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:42:53,953 DEBUG     decors.py Вызвана функция create_presence с параметрами (), {}, из модуля "__main__", из функции "main"
+2022-05-20 22:42:53,955 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:42:53,955 DEBUG     client.py '200': 'ok'
+2022-05-20 22:42:53,955 DEBUG     decors.py Вызвана функция process_ans с параметрами ({'response': 200},), {}, из модуля "__main__", из функции "main"
+2022-05-20 22:42:53,955 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-20 22:43:32,263 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:43:32,263 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075812.2630908, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:43:32,275 DEBUG     decors.py Вызвана функция "create_presence" с параметрами args = (), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:43:32,275 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:43:32,275 DEBUG     client.py '200': 'ok'
+2022-05-20 22:43:32,290 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:43:32,290 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-20 22:45:35,417 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:45:35,417 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075935.4173224, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:45:35,510 DEBUG     decors.py Вызвана функция "create_presence" с параметрами args = (), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:45:42,370 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:45:42,370 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075942.370204, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:45:42,385 DEBUG     decors.py Вызвана функция "create_presence" с параметрами args = (), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:45:42,414 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:45:42,414 DEBUG     client.py '200': 'ok'
+2022-05-20 22:45:42,414 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:45:42,414 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-20 22:46:16,084 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:46:16,084 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653075976.0842445, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:46:16,133 DEBUG     decors.py Вызвана функция "create_presence" с параметрами args = (), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:46:58,122 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:46:58,122 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653076018.1225712, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:46:58,138 DEBUG     decors.py Вызвана функция "create_presence" с параметрами args = (), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:46:58,138 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:46:58,138 DEBUG     client.py '200': 'ok'
+2022-05-20 22:46:58,138 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:46:58,138 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-20 22:47:08,787 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:47:08,787 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653076028.7872732, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:47:08,818 DEBUG     decors.py Вызвана функция "create_presence" с параметрами args = (), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:47:08,818 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:47:08,818 DEBUG     client.py '200': 'ok'
+2022-05-20 22:47:08,818 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:47:08,818 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'
+2022-05-20 22:47:19,128 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:47:19,128 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653076039.128367, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:47:19,183 DEBUG     decors.py Вызвана функция "create_presence" с параметрами args = (), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:47:25,173 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-20 22:47:25,173 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653076045.1736293, 'user': {'account_name': 'Guest'}} для пользователя Guest
+2022-05-20 22:47:25,189 DEBUG     decors.py Вызвана функция "create_presence" с параметрами args = (), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:47:25,220 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-20 22:47:25,220 DEBUG     client.py '200': 'ok'
+2022-05-20 22:47:25,220 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-20 22:47:25,220 DEBUG     client.py Сообщение от сервера: '{'200': 'ok'}'

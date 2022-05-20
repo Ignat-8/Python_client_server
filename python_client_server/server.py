@@ -5,12 +5,14 @@ import logging
 import logs.conf_server_log
 import common.settings as cmnset
 import common.utils as cmnutils
+from common.decors import log
 
 
 # Инициализация серверного логера
 SERVER_LOGGER = logging.getLogger('server')
 
 
+@log
 def process_client_message(message):
     SERVER_LOGGER.info(f'проверка сообщения от клента')
     if 'action' in message and message['action'] == 'presence' and 'time' in message \
