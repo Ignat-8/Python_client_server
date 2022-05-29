@@ -13,14 +13,17 @@ while True:
     if ACTION == 'q':
         break
     elif ACTION == 's':
-        PROCESS_LIST.append(Popen('python server.py', creationflags=CREATE_NEW_CONSOLE))
+        PROCESS_LIST.append(
+            Popen('python server.py', 
+                    creationflags=CREATE_NEW_CONSOLE)
+            )
 
-        for _ in range(2):
-            PROCESS_LIST.append(Popen('python client.py -m send', creationflags=CREATE_NEW_CONSOLE))
+        for _ in range(3):
+            PROCESS_LIST.append(
+                Popen(f'python client.py -n user_{_+1}', 
+                        creationflags=CREATE_NEW_CONSOLE)
+                )
         
-        for _ in range(5):
-            PROCESS_LIST.append(Popen('python client.py -m listen', creationflags=CREATE_NEW_CONSOLE))
-
     elif ACTION == 'x':
         for p in PROCESS_LIST:
             p.kill()
