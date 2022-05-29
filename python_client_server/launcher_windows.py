@@ -28,3 +28,4 @@ while True:
         for p in PROCESS_LIST:
             p.kill()
         PROCESS_LIST.clear()
+        

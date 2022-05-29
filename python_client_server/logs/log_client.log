@@ -11707,3 +11707,32 @@
 2022-05-29 13:06:50,342 DEBUG     client.py '200': 'ok'
 2022-05-29 13:06:50,343 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "main"
 2022-05-29 13:06:50,343 INFO      client.py Установлено соединение с сервером. Ответ сервера: {'200': 'ok'}
+2022-05-29 23:28:13,096 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-29 23:28:15,238 INFO      client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: q1
+2022-05-29 23:28:15,240 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653856095.2402277, 'user': {'account_name': 'q1'}}
+2022-05-29 23:28:15,300 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "main"
+2022-05-29 23:28:15,301 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54917), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653856095.2402277, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-29 23:28:16,328 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54917), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-29 23:28:16,328 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-29 23:28:16,328 DEBUG     client.py '200': 'ok'
+2022-05-29 23:28:16,329 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-29 23:28:16,330 INFO      client.py Установлено соединение с сервером. Ответ сервера: {'200': 'ok'}
+2022-05-29 23:28:34,781 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-29 23:28:37,019 INFO      client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: q1
+2022-05-29 23:28:37,034 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653856117.0347843, 'user': {'account_name': 'q1'}}
+2022-05-29 23:28:37,107 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "main"
+2022-05-29 23:28:37,108 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54918), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653856117.0347843, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-29 23:28:38,073 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54918), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-29 23:28:38,074 DEBUG     client.py Разбор сообщения от сервера: {'response': 300, 'error': 'Имя пользователя уже занято'}
+2022-05-29 23:28:38,074 DEBUG     client.py 400: Имя пользователя уже занято
+2022-05-29 23:28:38,074 ERROR     client.py При установки соединения сервер вернул ошибку: 400: Имя пользователя уже занято
+2022-05-29 23:28:48,675 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-29 23:28:50,563 INFO      client.py Запущен клиент с параметрами: адрес сервера: 127.0.0.1, порт: 7777, имя пользователя: q2
+2022-05-29 23:28:50,580 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653856130.5808876, 'user': {'account_name': 'q2'}}
+2022-05-29 23:28:50,642 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "main"
+2022-05-29 23:28:50,643 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54922), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653856130.5808876, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-29 23:28:51,637 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 54922), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-29 23:28:51,637 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-29 23:28:51,637 DEBUG     client.py '200': 'ok'
+2022-05-29 23:28:51,638 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-29 23:28:51,638 INFO      client.py Установлено соединение с сервером. Ответ сервера: {'200': 'ok'}
