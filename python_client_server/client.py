@@ -1,5 +1,5 @@
 """ Программа сервера для отправки приветствия сервера и получения ответа """
-# from http.client import EXPECTATION_FAILED
+
 import sys
 import json
 import time
@@ -17,11 +17,18 @@ import common.errors as my_err
 CLIENT_LOGGER = logging.getLogger('client')
 
 
+def print_help():
+    """Функция выводящяя справку по использованию"""
+    print('Поддерживаемые команды:')
+    print('message - отправить сообщение. Кому и текст будет запрошены отдельно.')
+    print('help - вывести подсказки по командам')
+    print('exit - выход из программы')
+
+
 @log
 def create_message(user_name='Guest', action='presence', text='', destination=''):
     """Функция создаёт словарь с сообщением.
     По умолчанию это регистрационное сообщение presence"""
-    
     message = {
         'action': action,
         'time': time.time(),
@@ -49,15 +56,130 @@ def process_ans(message):
             else:
                 return {'200': 'ok'}
 
-        CLIENT_LOGGER.debug(f"400: {message['error']}")
-        raise my_err.ServerError(f"400: {message['error']}")
+        if message['response'] == 300:
+            CLIENT_LOGGER.debug(f"300: {message['error']}")
+            raise my_err.AccountNameNotUniq
+
+        if message['response'] == 400:
+            CLIENT_LOGGER.debug(f"400: {message['error']}")
+            raise my_err.ServerError(f"400: {message['error']}")
     raise my_err.ReqFieldMissingError('response')
+
+
+@log
+def register_on_server(user_name, CLIENT_SOCK, server_address, server_port):
+    # Запрашиваем имя пользователя
+    while True:
+        if not user_name:
+            user_name = input('Введите имя пользователя: ')
+        else:
+            break
+
+    try:  # пытаемся зарегистрироваться на сервере
+        message_to_server = create_message(user_name=user_name, action='presence', 
+                                            text='', destination='')
+        cmnutils.send_message(CLIENT_SOCK, message_to_server)
+        server_answer = process_ans(cmnutils.get_message(CLIENT_SOCK))
+
+    except json.JSONDecodeError:
+        CLIENT_LOGGER.error('Не удалось декодировать полученную Json строку.')
+        print('Не удалось декодировать полученную Json строку.')
+        sys.exit(1)
+    except my_err.ServerError as error:
+        CLIENT_LOGGER.error(f'При установки соединения сервер вернул ошибку: {error.text}')
+        print(f'При установки соединения сервер вернул ошибку: {error.text}')
+        sys.exit(1)
+    except my_err.ReqFieldMissingError as missing_error:
+        CLIENT_LOGGER.error(f'В ответе сервера отсутствует необходимое поле {missing_error.missing_field}')
+        print(f'В ответе сервера отсутствует необходимое поле {missing_error.missing_field}')
+        sys.exit(1)
+    except (ConnectionRefusedError, ConnectionError):
+        CLIENT_LOGGER.critical(
+            f'Не удалось подключиться к серверу {server_address}:{server_port}, '
+            f'конечный компьютер отверг запрос на подключение.')
+        print(f'Не удалось подключиться к серверу {server_address}:{server_port}, '
+                f'конечный компьютер отверг запрос на подключение.')
+        sys.exit(1)
+    except my_err.AccountNameNotUniq:
+        print('Данное имя уже используется')
+        user_name = '' 
+        user_name, server_answer = register_on_server(user_name, CLIENT_SOCK)
+
+    return user_name, server_answer
+
+
+@log
+def message_from_server(CLIENT_SOCK, user_name):
+    """Функция - обработчик сообщений других пользователей, поступающих с сервера"""
+    while True:
+        try:
+            message = cmnutils.get_message(CLIENT_SOCK)
+            if 'action' in message and message['action'] == 'message' \
+                    and 'destination' in message and 'text' in message \
+                    and message['destination'] == user_name:
+                
+                print(f"\nПолучено сообщение от пользователя {message['user']['account_name']}:"
+                      f"\n{message['text']}")
+                CLIENT_LOGGER.info(f"Получено сообщение от пользователя {message['user']['account_name']}:"
+                                    f"\n{message['text']}")
+
+            # 'Получатель с таким имененм не активен'
+            if 'response' in message and message['response'] == 301:
+                print(message['error'])
+
+        except (my_err.NonDictError, my_err.NonStrError, my_err.NonBytesError):
+            CLIENT_LOGGER.error(f'Не удалось декодировать полученное сообщение.')
+        except (OSError, ConnectionError, ConnectionAbortedError,
+                ConnectionResetError, json.JSONDecodeError):
+            CLIENT_LOGGER.critical(f'Потеряно соединение с сервером.')
+            break
+
+
+@log
+def user_interactive(CLIENT_SOCK, user_name):
+    """Функция взаимодействия с пользователем, запрашивает команды, отправляет сообщения"""
+    print_help()
+    while True:
+        command = input('Введите команду: ')
+        if command == 'message':
+            to_user = input('Введите получателя сообщения: ')
+            if to_user == user_name:
+                print('Нельзя отправить сообщение самому себе')
+                continue
+            message_text = input('Введите сообщение для отправки: ')
+
+            message_send = create_message(user_name=user_name, 
+                                        action='message', 
+                                        text=message_text, 
+                                        destination=to_user)
+            CLIENT_LOGGER.debug(f'Сформирован словарь сообщения: {message_send}')
+            try:
+                cmnutils.send_message(CLIENT_SOCK, message_send)
+                CLIENT_LOGGER.info(f'Отправлено сообщение для пользователя {to_user}')
+                print(f'Отправлено сообщение для пользователя {to_user}')
+                # ждем ответ от сервера
+                time.sleep(1)
+            except Exception as e:
+                print('Потеряно соединение с сервером:\n', e)
+                CLIENT_LOGGER.critical('Потеряно соединение с сервером.')
+                sys.exit(1)
+        elif command == 'help':
+            print_help()
+        elif command == 'exit':
+            message_exit = create_message(user_name=user_name, action='exit')
+            cmnutils.send_message(CLIENT_SOCK, message_exit)
+            print('Завершение соединения.')
+            CLIENT_LOGGER.info('Завершение работы по команде пользователя.')
+            # Задержка неоходима, чтобы успело уйти сообщение о выходе
+            time.sleep(0.5)
+            break
+        else:
+            print('Команда не распознана, попробойте снова. help - вывести поддерживаемые команды.')
 
 
 def main():
     try:
         key_names = ('-m', '--mode', '-n', '--name')
-        # print('sys.argv =', sys.argv)
         server_address = sys.argv[1]
         if server_address in key_names:
             raise IndexError
@@ -67,7 +189,6 @@ def main():
             raise IndexError
         if server_port < 1024 or server_port > 65535:
             raise ValueError
-        
     except IndexError:
         server_address = cmnset.DEFAULT_ADDRESS
         server_port = cmnset.DEFAULT_PORT
@@ -83,7 +204,6 @@ def main():
         
         if '--name' in sys.argv:
             user_name = sys.argv[sys.argv.index('--name') + 1]
-
     except ValueError:
         CLIENT_LOGGER.error('Указано не верное значение аргумента')
         print("Указано не верное значение аргумента")
@@ -92,69 +212,36 @@ def main():
     """Сообщаем о запуске"""
     print(f'Консольный месседжер. Клиентский модуль. Имя пользователя: {user_name}')
 
-    # Если имя пользователя не было задано, необходимо запросить пользователя.
-    if not user_name:
-        user_name = input('Введите имя пользователя: ')
-
-    CLIENT_LOGGER.info(
-        f'Запущен клиент с параметрами: адрес сервера: {server_address}, '
-        f'порт: {server_port}, имя пользователя: {user_name}')
-
     with socket(AF_INET, SOCK_STREAM) as CLIENT_SOCK:
         CLIENT_SOCK.connect((server_address, server_port))
-        
-        try:  # регистрируемся на сервере
-            message_to_server = create_message(user_name=user_name, action='presence', text='', destination='')
-            cmnutils.send_message(CLIENT_SOCK, message_to_server)
-            server_answer = process_ans(cmnutils.get_message(CLIENT_SOCK))
-            
-            CLIENT_LOGGER.info(f'Установлено соединение с сервером. Ответ сервера: {server_answer}')
-            print(f'Установлено соединение с сервером. Ответ сервера:\n{server_answer}')
-        except json.JSONDecodeError:
-            CLIENT_LOGGER.error('Не удалось декодировать полученную Json строку.')
-            print('Не удалось декодировать полученную Json строку.')
-            sys.exit(1)
-        except my_err.ServerError as error:
-            CLIENT_LOGGER.error(f'При установки соединения сервер вернул ошибку: {error.text}')
-            print(f'При установки соединения сервер вернул ошибку: {error.text}')
-            sys.exit(1)
-        except my_err.ReqFieldMissingError as missing_error:
-            CLIENT_LOGGER.error(f'В ответе сервера отсутствует необходимое поле {missing_error.missing_field}')
-            print(f'В ответе сервера отсутствует необходимое поле {missing_error.missing_field}')
-            sys.exit(1)
-        except (ConnectionRefusedError, ConnectionError):
-            CLIENT_LOGGER.critical(
-                f'Не удалось подключиться к серверу {server_address}:{server_port}, '
-                f'конечный компьютер отверг запрос на подключение.')
-            print(f'Не удалось подключиться к серверу {server_address}:{server_port}, '
-                    f'конечный компьютер отверг запрос на подключение.')
-            sys.exit(1)
+        # регистрируемся на сервере
+        user_name, server_answer = register_on_server(user_name, CLIENT_SOCK, server_address, server_port)
 
+        CLIENT_LOGGER.info(f'Установлено соединение с сервером для пользователя {user_name}.\n \
+                                Ответ сервера: {server_answer}')
+        print(f'Установлено соединение с сервером для пользователя {user_name}.\n \
+                                Ответ сервера: {server_answer}')
 
+        # запускаем клиентский процесс приёма сообщений
+        receiver = Thread(target=message_from_server, args=(CLIENT_SOCK, user_name))
+        receiver.daemon = True
+        receiver.start()
 
+        # затем запускаем отправку сообщений и взаимодействие с пользователем.
+        user_interface = Thread(target=user_interactive, args=(CLIENT_SOCK, user_name))
+        user_interface.daemon = True
+        user_interface.start()
+        CLIENT_LOGGER.debug('Запущены процессы')
+
+        # Watchdog основной цикл, если один из потоков завершён,
+        # то значит или потеряно соединение или пользователь
+        # ввёл exit. Поскольку все события обработываются в потоках,
+        # достаточно просто завершить цикл.
         while True:
-            pass
-
-        #     message_to_server = create_presence()
-        #     message_to_server['text'] = msg
-        #     try:
-        #         cmnutils.send_message(CLIENT_SOCK, message_to_server)
-        #     except (ConnectionResetError, ConnectionError, ConnectionAbortedError):
-        #         CLIENT_LOGGER.error(f'Соединение с сервером {server_address} было потеряно.')
-        #         sys.exit(1)
-            
-        #     # Режим работы приём:
-            
-        #     try:
-        #         answer = process_ans(cmnutils.get_message(CLIENT_SOCK))
-        #         CLIENT_LOGGER.debug(f"Сообщение от сервера: '{answer}'")
-        #         print(f"Сообщение от сервера: '{answer}'")
-        #     except (ValueError, json.JSONDecodeError):
-        #         CLIENT_LOGGER.error('Не удалось декодировать сообщение сервера.')
-        #         print('Не удалось декодировать сообщение сервера.')
-        #         CLIENT_LOGGER.error(f'Соединение с сервером {server_address} было потеряно.')
-        #         print(f'Соединение с сервером {server_address} было потеряно.')
-        #         sys.exit(1)
+            time.sleep(1)
+            if receiver.is_alive() and user_interface.is_alive():
+                continue
+            break
 
 
 if __name__ == '__main__':

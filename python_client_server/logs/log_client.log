@@ -11736,3 +11736,920 @@
 2022-05-29 23:28:51,637 DEBUG     client.py '200': 'ok'
 2022-05-29 23:28:51,638 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "main"
 2022-05-29 23:28:51,638 INFO      client.py Установлено соединение с сервером. Ответ сервера: {'200': 'ok'}
+2022-05-30 22:31:35,337 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 22:31:37,280 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653939097.2803214, 'user': {'account_name': 'q1'}}
+2022-05-30 22:31:37,327 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:31:37,327 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51008), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653939097.2803214, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:31:37,443 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51008), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:31:37,443 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 22:31:37,443 DEBUG     client.py '200': 'ok'
+2022-05-30 22:31:37,445 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:31:37,445 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 22:31:37,455 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51008), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 22:31:56,522 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 22:31:58,338 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653939118.3389788, 'user': {'account_name': 'q2'}}
+2022-05-30 22:31:58,385 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:31:58,385 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51013), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653939118.3389788, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:31:58,616 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51013), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:31:58,616 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 22:31:58,616 DEBUG     client.py '200': 'ok'
+2022-05-30 22:31:58,619 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:31:58,619 INFO      client.py Установлено соединение с сервером для пользователя q2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 22:31:58,632 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51013), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 22:32:16,144 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 22:32:17,989 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653939137.9891963, 'user': {'account_name': 'q1'}}
+2022-05-30 22:32:18,051 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:32:18,067 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51020), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653939137.9891963, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:32:18,276 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51020), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:32:18,276 DEBUG     client.py Разбор сообщения от сервера: {'response': 300, 'error': 'Имя пользователя уже занято'}
+2022-05-30 22:32:18,276 DEBUG     client.py 300: Имя пользователя уже занято
+2022-05-30 22:32:28,811 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653939148.8116736, 'user': {'account_name': 'q2'}}
+2022-05-30 22:32:28,811 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:32:28,811 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51020), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653939148.8116736, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:39:48,680 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 22:39:50,037 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653939590.037968, 'user': {'account_name': 'q1'}}
+2022-05-30 22:39:50,069 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:39:50,069 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51034), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653939590.037968, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:39:50,766 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51034), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:39:50,766 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 22:39:50,766 DEBUG     client.py '200': 'ok'
+2022-05-30 22:39:50,768 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:39:50,768 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 22:39:50,776 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51034), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 22:40:05,394 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 22:40:07,095 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653939607.095256, 'user': {'account_name': 'q1'}}
+2022-05-30 22:40:07,126 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:40:07,126 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51035), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653939607.095256, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:40:07,441 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51035), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:40:07,441 DEBUG     client.py Разбор сообщения от сервера: {'response': 300, 'error': 'Имя пользователя уже занято'}
+2022-05-30 22:40:07,441 DEBUG     client.py 300: Имя пользователя уже занято
+2022-05-30 22:40:12,395 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653939612.395219, 'user': {'account_name': 'q1'}}
+2022-05-30 22:40:12,395 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:40:12,395 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51035), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653939612.395219, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:40:12,561 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51035), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:40:12,561 DEBUG     client.py Разбор сообщения от сервера: {'response': 300, 'error': 'Имя пользователя уже занято'}
+2022-05-30 22:40:12,561 DEBUG     client.py 300: Имя пользователя уже занято
+2022-05-30 22:40:15,276 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653939615.2761467, 'user': {'account_name': 'q2'}}
+2022-05-30 22:40:15,276 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:40:15,276 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51035), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653939615.2761467, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:40:15,609 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51035), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:40:15,610 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 22:40:15,610 DEBUG     client.py '200': 'ok'
+2022-05-30 22:40:15,612 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:40:15,612 INFO      client.py Установлено соединение с сервером для пользователя q2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 22:40:15,622 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51035), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:40:15,624 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51035), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:40:15,625 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51035), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 22:58:36,371 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 22:58:38,534 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653940718.534094, 'user': {'account_name': 'й2'}}
+2022-05-30 22:58:38,596 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'й2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:58:38,596 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51065), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653940718.534094, 'user': {'account_name': 'й2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:58:39,556 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51065), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:58:39,556 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 22:58:39,556 DEBUG     client.py '200': 'ok'
+2022-05-30 22:58:39,558 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:58:39,558 INFO      client.py Установлено соединение с сервером для пользователя й2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 22:58:39,620 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51065), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 22:58:48,736 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 22:58:51,385 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653940731.385384, 'user': {'account_name': 'q2'}}
+2022-05-30 22:58:51,416 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 22:58:51,432 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51066), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653940731.385384, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:58:51,825 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51066), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 22:58:51,826 DEBUG     client.py Разбор сообщения от сервера: {'response': 300, 'error': 'Имя пользователя уже занято'}
+2022-05-30 22:58:51,826 DEBUG     client.py 300: Имя пользователя уже занято
+2022-05-30 23:09:09,318 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:09:13,472 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653941353.4720652, 'user': {'account_name': 'q1'}}
+2022-05-30 23:09:13,503 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:09:13,503 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51086), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653941353.4720652, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:09:14,470 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51086), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:09:14,471 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:09:14,471 DEBUG     client.py '200': 'ok'
+2022-05-30 23:09:14,474 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:09:14,475 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:09:14,480 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51086), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:09:17,487 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:09:19,792 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653941359.792769, 'user': {'account_name': 'q1'}}
+2022-05-30 23:09:19,839 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:09:19,839 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653941359.792769, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:09:20,565 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:09:20,566 DEBUG     client.py Разбор сообщения от сервера: {'response': 300, 'error': 'Имя пользователя уже занято'}
+2022-05-30 23:09:20,566 DEBUG     client.py 300: Имя пользователя уже занято
+2022-05-30 23:09:24,373 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653941364.3738956, 'user': {'account_name': 'q1'}}
+2022-05-30 23:09:24,373 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:09:24,373 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653941364.3738956, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:09:24,607 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:09:24,629 DEBUG     client.py Разбор сообщения от сервера: {'response': 300, 'error': 'Имя пользователя уже занято'}
+2022-05-30 23:09:24,629 DEBUG     client.py 300: Имя пользователя уже занято
+2022-05-30 23:09:26,833 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653941366.8334131, 'user': {'account_name': 'q2'}}
+2022-05-30 23:09:26,833 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:09:26,833 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653941366.8334131, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:09:27,653 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:09:27,653 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:09:27,653 DEBUG     client.py '200': 'ok'
+2022-05-30 23:09:27,668 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:09:27,668 INFO      client.py Установлено соединение с сервером для пользователя q2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:09:27,675 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:09:27,680 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:09:27,681 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51088), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:13:00,569 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:13:02,017 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653941582.0174792, 'user': {'account_name': 'q1'}}
+2022-05-30 23:13:02,048 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:13:02,048 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51096), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653941582.0174792, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:13:02,655 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51096), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:13:02,657 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:13:02,657 DEBUG     client.py '200': 'ok'
+2022-05-30 23:13:02,666 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:13:02,667 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:13:02,677 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51096), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:14:50,590 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:14:52,101 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653941692.1007454, 'user': {'account_name': 'q1'}}
+2022-05-30 23:14:52,140 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:14:52,142 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51236), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653941692.1007454, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:14:52,666 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51236), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:14:52,666 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:14:52,666 DEBUG     client.py '200': 'ok'
+2022-05-30 23:14:52,670 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:14:52,670 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:14:52,675 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=332, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51236), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:15:41,695 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:15:43,309 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653941743.309779, 'user': {'account_name': 'q1'}}
+2022-05-30 23:15:43,348 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:15:43,350 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51446), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653941743.309779, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:15:43,778 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51446), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:15:43,778 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:15:43,779 DEBUG     client.py '200': 'ok'
+2022-05-30 23:15:43,780 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:15:43,780 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:15:43,785 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51446), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:19:27,201 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:19:28,807 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653941968.807646, 'user': {'account_name': 'q1'}}
+2022-05-30 23:19:28,838 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:19:28,838 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51534), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653941968.807646, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:19:29,286 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51534), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:19:29,287 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:19:29,287 DEBUG     client.py '200': 'ok'
+2022-05-30 23:19:29,289 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:19:29,289 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:19:29,296 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51534), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:22:03,944 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:22:05,360 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942125.3600683, 'user': {'account_name': 'й1'}}
+2022-05-30 23:22:05,406 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'й1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:05,406 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51573), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942125.3600683, 'user': {'account_name': 'й1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:06,016 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51573), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:06,016 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:22:06,016 DEBUG     client.py '200': 'ok'
+2022-05-30 23:22:06,018 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:06,019 INFO      client.py Установлено соединение с сервером для пользователя й1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:22:06,023 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51573), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:22:13,362 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:22:14,816 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942134.8169067, 'user': {'account_name': 'q1'}}
+2022-05-30 23:22:14,863 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:14,863 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51576), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942134.8169067, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:15,395 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51576), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:15,396 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:22:15,396 DEBUG     client.py '200': 'ok'
+2022-05-30 23:22:15,397 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:15,397 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:22:15,401 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51576), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:22:19,917 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:22:21,201 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942141.2015948, 'user': {'account_name': 'q1'}}
+2022-05-30 23:22:21,248 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:21,248 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=164, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942141.2015948, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:21,965 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=164, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:21,965 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:22:21,966 DEBUG     client.py '200': 'ok'
+2022-05-30 23:22:21,970 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:21,970 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:22:21,977 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=164, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:22:30,219 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:22:31,539 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942151.539854, 'user': {'account_name': 'q1'}}
+2022-05-30 23:22:31,586 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:31,586 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51581), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942151.539854, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:32,261 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51581), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:32,261 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:22:32,261 DEBUG     client.py '200': 'ok'
+2022-05-30 23:22:32,263 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:32,263 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:22:32,266 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51581), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:22:35,556 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:22:37,117 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942157.117031, 'user': {'account_name': 'q1'}}
+2022-05-30 23:22:37,148 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:37,148 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942157.117031, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:37,652 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:37,652 DEBUG     client.py Разбор сообщения от сервера: {'response': 300, 'error': 'Имя пользователя уже занято'}
+2022-05-30 23:22:37,652 DEBUG     client.py 300: Имя пользователя уже занято
+2022-05-30 23:22:40,589 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942160.5891259, 'user': {'account_name': 'q2'}}
+2022-05-30 23:22:40,589 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:40,589 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942160.5891259, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:40,645 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:40,646 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:22:40,646 DEBUG     client.py '200': 'ok'
+2022-05-30 23:22:40,652 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:40,653 INFO      client.py Установлено соединение с сервером для пользователя q2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:22:40,680 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:40,681 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:22:46,270 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:22:48,226 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942168.2261753, 'user': {'account_name': 'q2'}}
+2022-05-30 23:22:48,257 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:48,273 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51586), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942168.2261753, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:48,327 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51586), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:22:48,327 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:22:48,327 DEBUG     client.py '200': 'ok'
+2022-05-30 23:22:48,329 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:22:48,329 INFO      client.py Установлено соединение с сервером для пользователя q2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:22:48,346 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51586), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:24:25,315 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:24:25,440 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:24:25,456 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942265.4565074, 'user': {'account_name': 'user_1'}}
+2022-05-30 23:24:25,503 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:24:25,503 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:24:25,503 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51607), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942265.4565074, 'user': {'account_name': 'user_1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:24:25,503 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942265.5033672, 'user': {'account_name': 'user_2'}}
+2022-05-30 23:24:25,550 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:24:25,550 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51607), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:24:25,550 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:24:25,550 DEBUG     client.py '200': 'ok'
+2022-05-30 23:24:25,550 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51608), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942265.5033672, 'user': {'account_name': 'user_2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:24:25,550 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:24:25,550 INFO      client.py Установлено соединение с сервером для пользователя user_1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:24:25,565 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_1', <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51607), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:24:25,894 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653942265.8941321, 'user': {'account_name': 'user_3'}}
+2022-05-30 23:24:25,925 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_3', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:24:25,925 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51606), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653942265.8941321, 'user': {'account_name': 'user_3'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:24:25,972 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51606), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:24:25,972 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:24:25,972 DEBUG     client.py '200': 'ok'
+2022-05-30 23:24:25,972 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:24:25,972 INFO      client.py Установлено соединение с сервером для пользователя user_3.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:24:25,972 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_3', <socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51606), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:24:25,987 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51608), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:24:25,987 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:24:25,987 DEBUG     client.py '200': 'ok'
+2022-05-30 23:24:25,987 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:24:25,987 INFO      client.py Установлено соединение с сервером для пользователя user_2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:24:25,987 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_2', <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51608), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:51:52,321 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:51:52,354 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653943912.35425, 'user': {'account_name': 'user_1'}}
+2022-05-30 23:51:52,412 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:51:52,412 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51798), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653943912.35425, 'user': {'account_name': 'user_1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:51:52,500 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:51:52,502 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653943912.502628, 'user': {'account_name': 'user_2'}}
+2022-05-30 23:51:52,567 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:51:52,569 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51799), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653943912.502628, 'user': {'account_name': 'user_2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:51:52,593 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51798), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:51:52,593 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:51:52,593 DEBUG     client.py '200': 'ok'
+2022-05-30 23:51:52,596 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:51:52,597 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_1', <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51798), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:51:52,597 INFO      client.py Установлено соединение с сервером для пользователя user_1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:51:52,623 DEBUG     client.py Запущены процессы
+2022-05-30 23:51:52,657 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:51:52,663 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653943912.663629, 'user': {'account_name': 'user_3'}}
+2022-05-30 23:51:52,674 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51799), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:51:52,675 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:51:52,675 DEBUG     client.py '200': 'ok'
+2022-05-30 23:51:52,676 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:51:52,679 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_2', <socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51799), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:51:52,679 INFO      client.py Установлено соединение с сервером для пользователя user_2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:51:52,688 DEBUG     client.py Запущены процессы
+2022-05-30 23:51:52,742 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_3', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:51:52,746 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51800), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653943912.663629, 'user': {'account_name': 'user_3'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:51:53,709 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51800), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:51:53,709 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:51:53,709 DEBUG     client.py '200': 'ok'
+2022-05-30 23:51:53,709 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:51:53,709 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_3', <socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51800), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:51:53,709 INFO      client.py Установлено соединение с сервером для пользователя user_3.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:51:53,709 DEBUG     client.py Запущены процессы
+2022-05-30 23:52:17,319 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653943937.319399, 'user': {'account_name': 'user_3'}, 'text': 'sdsdsd', 'destination': 'user_1'}
+2022-05-30 23:52:17,334 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_3', 'action': 'message', 'text': 'sdsdsd', 'destination': 'user_1'}, из модуля "__main__", из функции "user_interactive"
+2022-05-30 23:52:17,334 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653943937.319399, 'user': {'account_name': 'user_3'}, 'text': 'sdsdsd', 'destination': 'user_1'}
+2022-05-30 23:52:17,334 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51800), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653943937.319399, 'user': {'account_name': 'user_3'}, 'text': 'sdsdsd', 'destination': 'user_1'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-30 23:52:17,334 INFO      client.py Отправлено сообщение для пользователя user_1
+2022-05-30 23:54:17,373 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:54:17,389 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653944057.3894577, 'user': {'account_name': 'user_2'}}
+2022-05-30 23:54:17,467 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:54:17,467 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:54:17,467 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51807), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653944057.3894577, 'user': {'account_name': 'user_2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:54:17,545 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:54:17,545 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-30 23:54:17,561 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51808), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653944057.467558, 'user': {'account_name': 'user_1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:54:17,561 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653944057.5612764, 'user': {'account_name': 'user_3'}}
+2022-05-30 23:54:17,561 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:54:17,561 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:54:17,561 DEBUG     client.py '200': 'ok'
+2022-05-30 23:54:17,561 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:54:17,561 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_2', <socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51807), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:54:17,561 INFO      client.py Установлено соединение с сервером для пользователя user_2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:54:17,576 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51808), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:54:17,576 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:54:17,576 DEBUG     client.py '200': 'ok'
+2022-05-30 23:54:17,576 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:54:17,576 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_1', <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51808), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:54:17,576 INFO      client.py Установлено соединение с сервером для пользователя user_1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:54:17,592 DEBUG     client.py Запущены процессы
+2022-05-30 23:54:17,592 DEBUG     client.py Запущены процессы
+2022-05-30 23:54:17,608 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_3', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:54:17,608 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51809), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653944057.5612764, 'user': {'account_name': 'user_3'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:54:18,625 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51809), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-30 23:54:18,625 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-30 23:54:18,625 DEBUG     client.py '200': 'ok'
+2022-05-30 23:54:18,627 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-30 23:54:18,629 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_3', <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51809), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-30 23:54:18,629 INFO      client.py Установлено соединение с сервером для пользователя user_3.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-30 23:54:18,632 DEBUG     client.py Запущены процессы
+2022-05-30 23:54:47,971 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653944087.9716525, 'user': {'account_name': 'user_1'}, 'text': 'asxasdasd', 'destination': 'user-2'}
+2022-05-30 23:54:47,971 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_1', 'action': 'message', 'text': 'asxasdasd', 'destination': 'user-2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-30 23:54:47,971 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653944087.9716525, 'user': {'account_name': 'user_1'}, 'text': 'asxasdasd', 'destination': 'user-2'}
+2022-05-30 23:54:47,987 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51808), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653944087.9716525, 'user': {'account_name': 'user_1'}, 'text': 'asxasdasd', 'destination': 'user-2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-30 23:54:47,987 INFO      client.py Отправлено сообщение для пользователя user-2
+2022-05-30 23:54:55,032 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653944095.0329247, 'user': {'account_name': 'user_1'}}
+2022-05-30 23:54:55,048 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_1', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-30 23:54:55,048 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51808), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653944095.0329247, 'user': {'account_name': 'user_1'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-30 23:54:55,048 INFO      client.py Завершение работы по команде пользователя.
+2022-05-30 23:54:55,157 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-30 23:54:55,157 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51808), raddr=('127.0.0.1', 7777)>, 'user_1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-30 23:54:55,564 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51808), raddr=('127.0.0.1', 7777)>, 'user_1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-30 23:55:22,054 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653944122.054051, 'user': {'account_name': 'user_2'}}
+2022-05-30 23:55:22,054 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_2', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-30 23:55:22,054 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51807), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653944122.054051, 'user': {'account_name': 'user_2'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-30 23:55:22,054 INFO      client.py Завершение работы по команде пользователя.
+2022-05-30 23:55:22,538 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-30 23:55:22,538 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51807), raddr=('127.0.0.1', 7777)>, 'user_2'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-30 23:55:22,584 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51807), raddr=('127.0.0.1', 7777)>, 'user_2'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-30 23:55:29,584 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653944129.5840309, 'user': {'account_name': 'user_3'}}
+2022-05-30 23:55:29,584 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_3', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-30 23:55:29,584 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51809), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653944129.5840309, 'user': {'account_name': 'user_3'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-30 23:55:29,584 INFO      client.py Завершение работы по команде пользователя.
+2022-05-30 23:55:29,615 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-30 23:55:29,615 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51809), raddr=('127.0.0.1', 7777)>, 'user_3'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-30 23:55:30,099 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51809), raddr=('127.0.0.1', 7777)>, 'user_3'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:06:24,567 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:06:24,571 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653977184.5710137, 'user': {'account_name': 'user_2'}}
+2022-05-31 09:06:24,645 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:06:24,648 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59925), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653977184.5710137, 'user': {'account_name': 'user_2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:06:24,796 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:06:24,806 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653977184.806014, 'user': {'account_name': 'user_3'}}
+2022-05-31 09:06:24,821 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:06:24,824 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653977184.824015, 'user': {'account_name': 'user_1'}}
+2022-05-31 09:06:24,953 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_3', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:06:24,955 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59926), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653977184.806014, 'user': {'account_name': 'user_3'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:06:24,957 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:06:24,963 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59927), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653977184.824015, 'user': {'account_name': 'user_1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:06:24,976 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59925), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:06:24,976 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:06:24,977 DEBUG     client.py '200': 'ok'
+2022-05-31 09:06:24,979 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:06:24,981 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_2', <socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59925), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:06:24,981 INFO      client.py Установлено соединение с сервером для пользователя user_2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:06:25,006 DEBUG     client.py Запущены процессы
+2022-05-31 09:06:25,025 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:06:25,033 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59925), raddr=('127.0.0.1', 7777)>, 'user_2'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:15:46,370 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:15:48,007 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653977748.0073333, 'user': {'account_name': 'q1'}}
+2022-05-31 09:15:48,048 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:15:48,050 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59937), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653977748.0073333, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:15:48,455 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59937), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:15:48,456 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:15:48,456 DEBUG     client.py '200': 'ok'
+2022-05-31 09:15:48,459 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:15:48,465 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59937), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:15:48,466 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:15:48,474 DEBUG     client.py Запущены процессы
+2022-05-31 09:15:48,509 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:15:48,514 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59937), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:16:56,936 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:16:58,464 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653977818.4643297, 'user': {'account_name': 'q1'}}
+2022-05-31 09:16:58,501 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:16:58,503 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=164, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59941), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653977818.4643297, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:16:59,023 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=164, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59941), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:16:59,023 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:16:59,024 DEBUG     client.py '200': 'ok'
+2022-05-31 09:16:59,025 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:16:59,026 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=164, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59941), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:16:59,026 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:16:59,038 DEBUG     client.py Запущены процессы
+2022-05-31 09:16:59,058 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:16:59,085 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=164, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59941), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:19:40,402 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:19:41,648 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653977981.647388, 'user': {'account_name': 'q1'}}
+2022-05-31 09:19:41,685 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:19:41,687 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59947), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653977981.647388, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:19:42,500 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59947), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:19:42,501 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:19:42,501 DEBUG     client.py '200': 'ok'
+2022-05-31 09:19:42,502 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:19:42,506 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59947), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:19:42,506 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:19:42,552 DEBUG     client.py Запущены процессы
+2022-05-31 09:19:42,571 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:19:42,589 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59947), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:20:50,940 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:20:55,792 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653978055.7921329, 'user': {'account_name': 'q1'}}
+2022-05-31 09:20:55,830 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:20:55,832 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59955), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653978055.7921329, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:20:56,049 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59955), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:20:56,049 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:20:56,049 DEBUG     client.py '200': 'ok'
+2022-05-31 09:20:56,053 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:20:56,054 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59955), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:20:56,054 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:20:56,073 DEBUG     client.py Запущены процессы
+2022-05-31 09:20:56,139 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:20:56,157 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59955), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:27:24,530 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:27:26,640 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653978446.6403275, 'user': {'account_name': 'q1'}}
+2022-05-31 09:27:26,678 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:27:26,680 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59993), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653978446.6403275, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:27:27,611 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59993), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:27:27,613 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:27:27,613 DEBUG     client.py '200': 'ok'
+2022-05-31 09:27:27,615 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:27:27,616 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59993), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:27:27,617 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:27:27,639 DEBUG     client.py Запущены процессы
+2022-05-31 09:27:27,675 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:27:27,685 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59993), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:28:50,599 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:28:51,744 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653978531.7446609, 'user': {'account_name': 'q1'}}
+2022-05-31 09:28:51,783 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:28:51,785 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59997), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653978531.7446609, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:28:52,674 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59997), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:28:52,674 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:28:52,674 DEBUG     client.py '200': 'ok'
+2022-05-31 09:28:52,677 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:28:52,680 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59997), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:28:52,680 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:28:52,702 DEBUG     client.py Запущены процессы
+2022-05-31 09:28:52,752 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:28:52,759 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59997), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:30:16,769 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:30:17,976 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653978617.976422, 'user': {'account_name': 'q1'}}
+2022-05-31 09:30:18,014 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:30:18,016 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60007), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653978617.976422, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:30:18,839 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60007), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:30:18,839 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:30:18,839 DEBUG     client.py '200': 'ok'
+2022-05-31 09:30:18,843 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:30:18,848 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60007), raddr=('127.0.0.1', 7777)>), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:30:18,849 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:30:18,874 DEBUG     client.py Запущены процессы
+2022-05-31 09:30:37,136 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653978637.1362445, 'user': {'account_name': 'q1'}, 'text': 'asdasda', 'destination': 'q2'}
+2022-05-31 09:30:37,139 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'asdasda', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 09:30:37,140 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653978637.1362445, 'user': {'account_name': 'q1'}, 'text': 'asdasda', 'destination': 'q2'}
+2022-05-31 09:30:37,142 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60007), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653978637.1362445, 'user': {'account_name': 'q1'}, 'text': 'asdasda', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 09:30:37,142 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 09:30:39,057 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:30:39,066 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60007), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:55:07,532 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:55:08,841 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980108.8411229, 'user': {'account_name': 'q1'}}
+2022-05-31 09:55:08,879 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:55:08,881 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56775), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980108.8411229, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:55:09,608 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56775), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:55:09,609 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:55:09,609 DEBUG     client.py '200': 'ok'
+2022-05-31 09:55:09,611 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:55:09,613 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56775), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:55:09,613 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:55:09,634 DEBUG     client.py Запущены процессы
+2022-05-31 09:55:19,801 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653980119.801197, 'user': {'account_name': 'q1'}, 'text': 'sdsfsd', 'destination': 'q2'}
+2022-05-31 09:55:19,804 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'sdsfsd', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 09:55:19,805 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653980119.801197, 'user': {'account_name': 'q1'}, 'text': 'sdsfsd', 'destination': 'q2'}
+2022-05-31 09:55:19,807 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56775), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653980119.801197, 'user': {'account_name': 'q1'}, 'text': 'sdsfsd', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 09:55:19,807 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 09:55:20,745 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:55:20,759 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56775), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 09:56:50,847 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 09:56:54,329 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980214.3292484, 'user': {'account_name': 'q1'}}
+2022-05-31 09:56:54,367 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:56:54,369 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980214.3292484, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:56:54,945 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 09:56:54,946 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 09:56:54,946 DEBUG     client.py '200': 'ok'
+2022-05-31 09:56:54,951 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 09:56:54,953 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 09:56:54,953 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 09:56:54,967 DEBUG     client.py Запущены процессы
+2022-05-31 09:57:03,249 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653980223.2494702, 'user': {'account_name': 'q1'}, 'text': 'asdadas', 'destination': 'q2'}
+2022-05-31 09:57:03,252 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'asdadas', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 09:57:03,253 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653980223.2494702, 'user': {'account_name': 'q1'}, 'text': 'asdadas', 'destination': 'q2'}
+2022-05-31 09:57:03,255 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653980223.2494702, 'user': {'account_name': 'q1'}, 'text': 'asdadas', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 09:57:03,255 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 09:57:04,039 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:04,039 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:05,059 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:05,059 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:06,069 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:06,069 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:07,089 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:07,089 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:08,096 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:08,096 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:09,093 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:09,093 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:10,110 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:10,110 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:11,104 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:11,104 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:12,109 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:12,109 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:13,120 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:13,120 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:14,126 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:14,127 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:15,138 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56790), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 09:57:15,140 ERROR     client.py Получено некорректное сообщение с сервера: {'response': 301, 'error': 'Получатель с таким имененм не активен'}
+2022-05-31 09:57:15,948 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 09:57:15,951 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:00:52,466 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:00:56,066 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980456.0663836, 'user': {'account_name': 'q1'}}
+2022-05-31 10:00:56,105 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:00:56,107 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980456.0663836, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:00:56,518 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:00:56,518 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:00:56,518 DEBUG     client.py '200': 'ok'
+2022-05-31 10:00:56,523 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:00:56,524 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:00:56,525 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:00:56,529 DEBUG     client.py Запущены процессы
+2022-05-31 10:01:05,921 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653980465.9213521, 'user': {'account_name': 'q1'}, 'text': 'asdas', 'destination': 'q2'}
+2022-05-31 10:01:05,924 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'asdas', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:01:05,925 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653980465.9213521, 'user': {'account_name': 'q1'}, 'text': 'asdas', 'destination': 'q2'}
+2022-05-31 10:01:05,927 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653980465.9213521, 'user': {'account_name': 'q1'}, 'text': 'asdas', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:01:05,927 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 10:01:06,586 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:07,603 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:08,611 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:09,620 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:10,628 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:11,636 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:12,640 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:13,652 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:14,660 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:15,675 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:16,679 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:17,689 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:18,702 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:19,707 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:20,719 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:21,722 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:22,729 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:23,740 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:24,759 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=256, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56807), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:01:25,283 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:01:25,287 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:02:28,132 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:02:29,753 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980549.7533855, 'user': {'account_name': 'q1'}}
+2022-05-31 10:02:29,793 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:02:29,795 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56811), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980549.7533855, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:02:30,226 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56811), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:02:30,226 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:02:30,227 DEBUG     client.py '200': 'ok'
+2022-05-31 10:02:30,229 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:02:30,230 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56811), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:02:30,231 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:02:30,245 DEBUG     client.py Запущены процессы
+2022-05-31 10:02:41,585 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653980561.5853527, 'user': {'account_name': 'q1'}, 'text': 'sadasdasd', 'destination': 'q2'}
+2022-05-31 10:02:41,589 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'sadasdasd', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:02:41,589 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653980561.5853527, 'user': {'account_name': 'q1'}, 'text': 'sadasdasd', 'destination': 'q2'}
+2022-05-31 10:02:41,591 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56811), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653980561.5853527, 'user': {'account_name': 'q1'}, 'text': 'sadasdasd', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:02:41,591 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 10:02:42,346 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56811), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:03:12,993 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653980592.9934013, 'user': {'account_name': 'q1'}}
+2022-05-31 10:03:12,995 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:03:12,998 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56811), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653980592.9934013, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:03:12,999 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:03:13,509 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56811), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:03:13,627 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:03:13,630 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=316, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56811), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:03:24,831 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:03:26,241 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980606.2414103, 'user': {'account_name': 'q1'}}
+2022-05-31 10:03:26,279 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:03:26,281 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56817), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980606.2414103, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:03:26,906 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56817), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:03:26,906 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:03:26,906 DEBUG     client.py '200': 'ok'
+2022-05-31 10:03:26,908 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:03:26,909 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56817), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:03:26,909 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:03:26,918 DEBUG     client.py Запущены процессы
+2022-05-31 10:03:37,489 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653980617.4893305, 'user': {'account_name': 'q1'}, 'text': 'sadasd', 'destination': 'q2'}
+2022-05-31 10:03:37,493 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'sadasd', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:03:37,493 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653980617.4893305, 'user': {'account_name': 'q1'}, 'text': 'sadasd', 'destination': 'q2'}
+2022-05-31 10:03:37,495 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56817), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653980617.4893305, 'user': {'account_name': 'q1'}, 'text': 'sadasd', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:03:37,495 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 10:03:38,014 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56817), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:06:09,609 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653980769.6094887, 'user': {'account_name': 'q1'}}
+2022-05-31 10:06:09,612 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:06:09,614 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56817), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653980769.6094887, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:06:09,615 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:06:10,118 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56817), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:06:10,397 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:06:10,401 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:06:12,551 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:06:14,697 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980774.697372, 'user': {'account_name': 'q1'}}
+2022-05-31 10:06:14,735 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:06:14,737 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51565), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980774.697372, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:06:15,592 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51565), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:06:15,592 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:06:15,593 DEBUG     client.py '200': 'ok'
+2022-05-31 10:06:15,594 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:06:15,595 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51565), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:06:15,595 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:06:15,604 DEBUG     client.py Запущены процессы
+2022-05-31 10:06:31,850 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653980791.8505044, 'user': {'account_name': 'q1'}, 'text': 'asdasd', 'destination': 'q2'}
+2022-05-31 10:06:31,853 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'asdasd', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:06:31,853 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653980791.8505044, 'user': {'account_name': 'q1'}, 'text': 'asdasd', 'destination': 'q2'}
+2022-05-31 10:06:31,855 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51565), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653980791.8505044, 'user': {'account_name': 'q1'}, 'text': 'asdasd', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:06:31,855 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 10:06:32,743 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51565), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:06:58,321 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653980818.321447, 'user': {'account_name': 'q1'}}
+2022-05-31 10:06:58,324 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:06:58,326 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51565), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653980818.321447, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:06:58,327 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:06:58,841 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51565), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:07:00,737 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:07:03,145 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980823.1457658, 'user': {'account_name': 'q1'}}
+2022-05-31 10:07:03,184 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:07:03,186 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51569), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980823.1457658, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:07:03,769 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51569), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:07:03,769 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:07:03,769 DEBUG     client.py '200': 'ok'
+2022-05-31 10:07:03,771 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:07:03,772 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51569), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:07:03,772 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:07:03,778 DEBUG     client.py Запущены процессы
+2022-05-31 10:07:13,377 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653980833.3775203, 'user': {'account_name': 'q1'}, 'text': 'asdasd', 'destination': 'q2'}
+2022-05-31 10:07:13,380 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'asdasd', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:07:13,381 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653980833.3775203, 'user': {'account_name': 'q1'}, 'text': 'asdasd', 'destination': 'q2'}
+2022-05-31 10:07:13,383 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51569), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653980833.3775203, 'user': {'account_name': 'q1'}, 'text': 'asdasd', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:07:13,383 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 10:07:13,872 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51569), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:07:57,223 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:07:59,328 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980879.3287747, 'user': {'account_name': 'q2'}}
+2022-05-31 10:07:59,368 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:07:59,370 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980879.3287747, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:08:00,256 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:08:00,256 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:08:00,256 DEBUG     client.py '200': 'ok'
+2022-05-31 10:08:00,258 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:08:00,259 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:08:00,259 INFO      client.py Установлено соединение с сервером для пользователя q2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:08:00,271 DEBUG     client.py Запущены процессы
+2022-05-31 10:08:09,857 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653980889.85756, 'user': {'account_name': 'q2'}, 'text': 'asdasd', 'destination': 'q1'}
+2022-05-31 10:08:09,860 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'message', 'text': 'asdasd', 'destination': 'q1'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:08:09,860 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653980889.85756, 'user': {'account_name': 'q2'}, 'text': 'asdasd', 'destination': 'q1'}
+2022-05-31 10:08:09,862 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653980889.85756, 'user': {'account_name': 'q2'}, 'text': 'asdasd', 'destination': 'q1'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:08:09,863 INFO      client.py Отправлено сообщение для пользователя q1
+2022-05-31 10:08:10,370 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:09:37,120 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653980977.1208212, 'user': {'account_name': 'q1'}}
+2022-05-31 10:09:37,123 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:09:37,126 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51569), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653980977.1208212, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:09:37,127 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:09:37,247 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:09:37,253 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51569), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:09:43,185 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653980983.185631, 'user': {'account_name': 'q2'}}
+2022-05-31 10:09:43,188 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:09:43,190 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653980983.185631, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:09:43,191 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:09:43,304 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:09:43,306 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51579), raddr=('127.0.0.1', 7777)>, 'q2'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:09:45,430 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:09:47,345 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980987.3451207, 'user': {'account_name': 'q1'}}
+2022-05-31 10:09:47,384 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:09:47,386 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980987.3451207, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:09:47,458 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:09:47,459 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:09:47,459 DEBUG     client.py '200': 'ok'
+2022-05-31 10:09:47,460 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:09:47,461 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:09:47,461 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:09:47,468 DEBUG     client.py Запущены процессы
+2022-05-31 10:09:50,165 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:09:53,009 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653980993.0093803, 'user': {'account_name': 'q2'}}
+2022-05-31 10:09:53,048 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:09:53,051 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51585), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653980993.0093803, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:09:53,202 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51585), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:09:53,202 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:09:53,202 DEBUG     client.py '200': 'ok'
+2022-05-31 10:09:53,204 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:09:53,205 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51585), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:09:53,205 INFO      client.py Установлено соединение с сервером для пользователя q2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:09:53,214 DEBUG     client.py Запущены процессы
+2022-05-31 10:10:04,617 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653981004.6173947, 'user': {'account_name': 'q2'}, 'text': 'asdasd', 'destination': 'q1'}
+2022-05-31 10:10:04,621 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'message', 'text': 'asdasd', 'destination': 'q1'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:10:04,621 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653981004.6173947, 'user': {'account_name': 'q2'}, 'text': 'asdasd', 'destination': 'q1'}
+2022-05-31 10:10:04,623 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51585), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653981004.6173947, 'user': {'account_name': 'q2'}, 'text': 'asdasd', 'destination': 'q1'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:10:04,623 INFO      client.py Отправлено сообщение для пользователя q1
+2022-05-31 10:10:05,337 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51585), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:16:43,698 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653981403.6980357, 'user': {'account_name': 'q2'}}
+2022-05-31 10:16:43,700 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:16:43,703 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51585), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653981403.6980357, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:16:43,703 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:16:44,069 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:16:44,072 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51585), raddr=('127.0.0.1', 7777)>, 'q2'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:16:44,219 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51585), raddr=('127.0.0.1', 7777)>, 'q2'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:16:47,705 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653981407.7051187, 'user': {'account_name': 'q1'}}
+2022-05-31 10:16:47,726 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:16:47,728 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653981407.7051187, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:16:47,728 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:16:48,105 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:16:48,107 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:16:48,240 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51583), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:20:05,085 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:20:06,801 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653981606.801995, 'user': {'account_name': 'й1'}}
+2022-05-31 10:20:06,849 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'й1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:20:06,852 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51908), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653981606.801995, 'user': {'account_name': 'й1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:20:07,154 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51908), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:20:07,154 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:20:07,154 DEBUG     client.py '200': 'ok'
+2022-05-31 10:20:07,157 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:20:07,159 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51908), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:20:07,159 INFO      client.py Установлено соединение с сервером для пользователя й1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:20:07,178 DEBUG     client.py Запущены процессы
+2022-05-31 10:20:10,257 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653981610.2578852, 'user': {'account_name': 'й1'}}
+2022-05-31 10:20:10,261 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'й1', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:20:10,263 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51908), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653981610.2578852, 'user': {'account_name': 'й1'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:20:10,263 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:20:10,772 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51908), raddr=('127.0.0.1', 7777)>, 'й1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:20:12,574 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:20:13,746 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653981613.7461686, 'user': {'account_name': 'q1'}}
+2022-05-31 10:20:13,784 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:20:13,786 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51914), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653981613.7461686, 'user': {'account_name': 'q1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:20:14,593 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51914), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:20:14,594 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:20:14,594 DEBUG     client.py '200': 'ok'
+2022-05-31 10:20:14,595 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:20:14,596 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51914), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:20:14,597 INFO      client.py Установлено соединение с сервером для пользователя q1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:20:14,604 DEBUG     client.py Запущены процессы
+2022-05-31 10:20:30,882 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653981630.8811355, 'user': {'account_name': 'q1'}, 'text': 'asasdfsdf', 'destination': 'q2'}
+2022-05-31 10:20:30,886 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'asasdfsdf', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:20:30,886 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653981630.8811355, 'user': {'account_name': 'q1'}, 'text': 'asasdfsdf', 'destination': 'q2'}
+2022-05-31 10:20:30,889 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51914), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653981630.8811355, 'user': {'account_name': 'q1'}, 'text': 'asasdfsdf', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:20:30,889 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 10:20:31,744 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51914), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:20:44,197 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:20:46,553 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653981646.5538776, 'user': {'account_name': 'q2'}}
+2022-05-31 10:20:46,596 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:20:46,597 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51943), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653981646.5538776, 'user': {'account_name': 'q2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:20:47,229 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51943), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:20:47,230 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:20:47,230 DEBUG     client.py '200': 'ok'
+2022-05-31 10:20:47,231 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:20:47,232 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('', <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51943), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:20:47,233 INFO      client.py Установлено соединение с сервером для пользователя q2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:20:47,243 DEBUG     client.py Запущены процессы
+2022-05-31 10:20:52,961 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653981652.9618642, 'user': {'account_name': 'q1'}, 'text': 'asdasd', 'destination': 'q2'}
+2022-05-31 10:20:52,963 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'asdasd', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:20:52,964 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653981652.9618642, 'user': {'account_name': 'q1'}, 'text': 'asdasd', 'destination': 'q2'}
+2022-05-31 10:20:52,966 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51914), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653981652.9618642, 'user': {'account_name': 'q1'}, 'text': 'asdasd', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:20:52,966 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 10:20:53,312 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51943), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:20:53,319 INFO      client.py Получено сообщение от пользователя q1:
+asdasd
+2022-05-31 10:21:58,897 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653981718.897827, 'user': {'account_name': 'q2'}, 'text': 'sdasdasd', 'destination': 'q1'}
+2022-05-31 10:21:58,899 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q2', 'action': 'message', 'text': 'sdasdasd', 'destination': 'q1'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:21:58,900 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653981718.897827, 'user': {'account_name': 'q2'}, 'text': 'sdasdasd', 'destination': 'q1'}
+2022-05-31 10:21:58,902 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51943), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653981718.897827, 'user': {'account_name': 'q2'}, 'text': 'sdasdasd', 'destination': 'q1'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:21:58,902 INFO      client.py Отправлено сообщение для пользователя q1
+2022-05-31 10:21:58,952 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51914), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:21:58,963 INFO      client.py Получено сообщение от пользователя q2:
+sdasdasd
+2022-05-31 10:23:27,026 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653981807.0262053, 'user': {'account_name': 'q1'}, 'text': 'asdasdasd', 'destination': 'q2'}
+2022-05-31 10:23:27,028 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'q1', 'action': 'message', 'text': 'asdasdasd', 'destination': 'q2'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:23:27,028 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653981807.0262053, 'user': {'account_name': 'q1'}, 'text': 'asdasdasd', 'destination': 'q2'}
+2022-05-31 10:23:27,031 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51914), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653981807.0262053, 'user': {'account_name': 'q1'}, 'text': 'asdasdasd', 'destination': 'q2'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:23:27,031 INFO      client.py Отправлено сообщение для пользователя q2
+2022-05-31 10:23:27,797 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51943), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:23:27,803 INFO      client.py Получено сообщение от пользователя q1:
+asdasdasd
+2022-05-31 10:26:43,739 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:26:43,764 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51943), raddr=('127.0.0.1', 7777)>, 'q2'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:26:43,739 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:26:43,770 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51914), raddr=('127.0.0.1', 7777)>, 'q1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:27:07,616 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:27:07,727 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:27:07,808 INFO      client.py Использование параметров по умолчанию - DEFAULT_ADDRESS и DEFAULT_PORT
+2022-05-31 10:27:07,811 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653982027.811141, 'user': {'account_name': 'user_3'}}
+2022-05-31 10:27:07,861 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_3', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:27:07,863 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52027), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653982027.811141, 'user': {'account_name': 'user_3'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:27:08,156 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653982028.1561503, 'user': {'account_name': 'user_2'}}
+2022-05-31 10:27:08,213 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_2', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:27:08,216 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52025), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653982028.1561503, 'user': {'account_name': 'user_2'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:27:08,223 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52027), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:27:08,224 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:27:08,224 DEBUG     client.py '200': 'ok'
+2022-05-31 10:27:08,225 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:27:08,226 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_3', <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52027), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:27:08,227 INFO      client.py Установлено соединение с сервером для пользователя user_3.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:27:08,230 DEBUG     client.py Запущены процессы
+2022-05-31 10:27:08,249 DEBUG     client.py Сформировано сообщение {'action': 'presence', 'time': 1653982028.249152, 'user': {'account_name': 'user_1'}}
+2022-05-31 10:27:08,282 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52025), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:27:08,282 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:27:08,283 DEBUG     client.py '200': 'ok'
+2022-05-31 10:27:08,284 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:27:08,285 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_2', <socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52025), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:27:08,288 INFO      client.py Установлено соединение с сервером для пользователя user_2.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:27:08,298 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_1', 'action': 'presence', 'text': '', 'destination': ''}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:27:08,300 DEBUG     client.py Запущены процессы
+2022-05-31 10:27:08,300 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52026), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1653982028.249152, 'user': {'account_name': 'user_1'}}), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:27:09,310 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52026), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "register_on_server"
+2022-05-31 10:27:09,311 DEBUG     client.py Разбор сообщения от сервера: {'response': 200}
+2022-05-31 10:27:09,311 DEBUG     client.py '200': 'ok'
+2022-05-31 10:27:09,312 DEBUG     decors.py Вызвана функция "process_ans" с параметрами args = ({'response': 200},), kwargs = {}, из модуля "__main__", из функции "register_on_server"
+2022-05-31 10:27:09,313 DEBUG     decors.py Вызвана функция "register_on_server" с параметрами args = ('user_1', <socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52026), raddr=('127.0.0.1', 7777)>, '127.0.0.1', 7777), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-31 10:27:09,314 INFO      client.py Установлено соединение с сервером для пользователя user_1.
+                                 Ответ сервера: {'200': 'ok'}
+2022-05-31 10:27:09,317 DEBUG     client.py Запущены процессы
+2022-05-31 10:27:31,705 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653982051.7052038, 'user': {'account_name': 'user_2'}, 'text': 'zxczsdsdv', 'destination': 'user_1'}
+2022-05-31 10:27:31,709 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_2', 'action': 'message', 'text': 'zxczsdsdv', 'destination': 'user_1'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:27:31,709 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653982051.7052038, 'user': {'account_name': 'user_2'}, 'text': 'zxczsdsdv', 'destination': 'user_1'}
+2022-05-31 10:27:31,711 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52025), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653982051.7052038, 'user': {'account_name': 'user_2'}, 'text': 'zxczsdsdv', 'destination': 'user_1'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:27:31,711 INFO      client.py Отправлено сообщение для пользователя user_1
+2022-05-31 10:27:32,531 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52026), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:27:32,533 INFO      client.py Получено сообщение от пользователя user_2:
+zxczsdsdv
+2022-05-31 10:28:21,634 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653982101.6340618, 'user': {'account_name': 'user_1'}, 'text': 'czccsdf434r3rr34', 'destination': 'user_3'}
+2022-05-31 10:28:21,637 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_1', 'action': 'message', 'text': 'czccsdf434r3rr34', 'destination': 'user_3'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:28:21,637 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653982101.6340618, 'user': {'account_name': 'user_1'}, 'text': 'czccsdf434r3rr34', 'destination': 'user_3'}
+2022-05-31 10:28:21,639 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52026), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653982101.6340618, 'user': {'account_name': 'user_1'}, 'text': 'czccsdf434r3rr34', 'destination': 'user_3'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:28:21,639 INFO      client.py Отправлено сообщение для пользователя user_3
+2022-05-31 10:28:21,965 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52027), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:28:21,966 INFO      client.py Получено сообщение от пользователя user_1:
+czccsdf434r3rr34
+2022-05-31 10:28:29,546 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653982109.5462027, 'user': {'account_name': 'user_3'}}
+2022-05-31 10:28:29,548 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_3', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:28:29,550 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52027), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653982109.5462027, 'user': {'account_name': 'user_3'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:28:29,551 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:28:30,045 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:28:30,047 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52027), raddr=('127.0.0.1', 7777)>, 'user_3'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:28:30,059 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52027), raddr=('127.0.0.1', 7777)>, 'user_3'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:28:42,129 DEBUG     client.py Сформировано сообщение {'action': 'message', 'time': 1653982122.1293762, 'user': {'account_name': 'user_2'}, 'text': 'csdvcsdvdf', 'destination': 'user_3'}
+2022-05-31 10:28:42,132 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_2', 'action': 'message', 'text': 'csdvcsdvdf', 'destination': 'user_3'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:28:42,132 DEBUG     client.py Сформирован словарь сообщения: {'action': 'message', 'time': 1653982122.1293762, 'user': {'account_name': 'user_2'}, 'text': 'csdvcsdvdf', 'destination': 'user_3'}
+2022-05-31 10:28:42,134 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52025), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'time': 1653982122.1293762, 'user': {'account_name': 'user_2'}, 'text': 'csdvcsdvdf', 'destination': 'user_3'}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:28:42,134 INFO      client.py Отправлено сообщение для пользователя user_3
+2022-05-31 10:28:42,179 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52025), raddr=('127.0.0.1', 7777)>,), kwargs = {}, из модуля "common.utils", из функции "message_from_server"
+2022-05-31 10:28:46,722 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653982126.72209, 'user': {'account_name': 'user_2'}}
+2022-05-31 10:28:46,724 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_2', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:28:46,726 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52025), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653982126.72209, 'user': {'account_name': 'user_2'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:28:46,727 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:28:47,228 CRITICAL  client.py Потеряно соединение с сервером.
+2022-05-31 10:28:47,230 DEBUG     decors.py Вызвана функция "message_from_server" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52025), raddr=('127.0.0.1', 7777)>, 'user_2'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:28:47,241 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52025), raddr=('127.0.0.1', 7777)>, 'user_2'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:28:51,330 DEBUG     client.py Сформировано сообщение {'action': 'exit', 'time': 1653982131.3301368, 'user': {'account_name': 'user_1'}}
+2022-05-31 10:28:51,332 DEBUG     decors.py Вызвана функция "create_message" с параметрами args = (), kwargs = {'user_name': 'user_1', 'action': 'exit'}, из модуля "__main__", из функции "user_interactive"
+2022-05-31 10:28:51,334 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52026), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1653982131.3301368, 'user': {'account_name': 'user_1'}}), kwargs = {}, из модуля "common.utils", из функции "user_interactive"
+2022-05-31 10:28:51,334 INFO      client.py Завершение работы по команде пользователя.
+2022-05-31 10:28:51,848 DEBUG     decors.py Вызвана функция "user_interactive" с параметрами args = (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52026), raddr=('127.0.0.1', 7777)>, 'user_1'), kwargs = {}, из модуля "__main__", из функции "run"
+2022-05-31 10:28:52,157 CRITICAL  client.py Потеряно соединение с сервером.
