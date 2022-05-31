@@ -1,3 +1,6 @@
+import logging
+
+
 # максимальная длина сообщения в байтах
 MAX_PACKAGE_LENGTH = 1024
 
@@ -10,3 +13,9 @@ MAX_CONNECTIONS = 5
 # параметры подключения к серверу по умолчанию
 DEFAULT_ADDRESS = '127.0.0.1'
 DEFAULT_PORT = 7777
+
+# Текущий уровень логирования
+LOGGING_LEVEL = logging.DEBUG
+
+
+

@@ -1,0 +1,58 @@
+2022-05-23 22:02:26,848 INFO      server.py Определяем параметры сервера
+2022-05-23 22:02:26,848 DEBUG     server.py Используется порт по умолчанию 7777
+2022-05-23 22:02:26,848 INFO      server.py Используется адрес по умолчанию
+2022-05-23 22:02:26,848 INFO      server.py Готовим сокет
+2022-05-23 22:02:37,632 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=464, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58826)>,), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:02:37,632 DEBUG     server.py Получено сообщение от клиента <socket.socket fd=464, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58826)>: {'action': 'presence', 'time': 1653332557.5858421, 'user': {'account_name': 'Guest'}}
+2022-05-23 22:02:37,632 INFO      server.py проверка сообщения от клента
+2022-05-23 22:02:37,632 DEBUG     server.py сообщение от клента правильное
+2022-05-23 22:02:37,632 DEBUG     decors.py Вызвана функция "process_client_message" с параметрами args = ({'action': 'presence', 'time': 1653332557.5858421, 'user': {'account_name': 'Guest'}},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-23 22:02:37,632 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=464, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58826)>, {'response': 200}), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:02:37,632 DEBUG     server.py Сообщение отправлено клиенту
+2022-05-23 22:10:55,756 INFO      server.py Определяем параметры сервера
+2022-05-23 22:10:55,756 DEBUG     server.py Используется порт по умолчанию 7777
+2022-05-23 22:10:55,756 INFO      server.py Используется адрес по умолчанию
+2022-05-23 22:10:55,756 INFO      server.py Готовим сокет
+2022-05-23 22:11:02,491 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58897)>,), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:11:02,491 DEBUG     server.py Получено сообщение от клиента <socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58897)>: {'action': 'presence', 'time': 1653333058.6477885, 'user': {'account_name': 'Guest'}, 'message': 'www'}
+2022-05-23 22:11:02,492 INFO      server.py проверка сообщения от клента
+2022-05-23 22:11:02,493 DEBUG     server.py сообщение от клента правильное
+2022-05-23 22:11:02,495 DEBUG     decors.py Вызвана функция "process_client_message" с параметрами args = ({'action': 'presence', 'time': 1653333058.6477885, 'user': {'account_name': 'Guest'}, 'message': 'www'},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-23 22:11:02,497 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58897)>, {'response': 200, 'message': 'WWW'}), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:11:02,498 DEBUG     server.py Сообщение отправлено клиенту
+2022-05-23 22:12:37,639 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58911)>,), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:12:37,639 DEBUG     server.py Получено сообщение от клиента <socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58911)>: {'action': 'presence', 'time': 1653333155.6706707, 'user': {'account_name': 'Guest'}, 'message': 'hhh'}
+2022-05-23 22:12:37,641 INFO      server.py проверка сообщения от клента
+2022-05-23 22:12:37,642 DEBUG     server.py сообщение от клента правильное
+2022-05-23 22:12:37,643 DEBUG     decors.py Вызвана функция "process_client_message" с параметрами args = ({'action': 'presence', 'time': 1653333155.6706707, 'user': {'account_name': 'Guest'}, 'message': 'hhh'},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-23 22:12:37,644 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58911)>, {'response': 200, 'message': 'HHH'}), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:12:37,645 DEBUG     server.py Сообщение отправлено клиенту
+2022-05-23 22:15:26,855 INFO      server.py Определяем параметры сервера
+2022-05-23 22:15:26,855 DEBUG     server.py Используется порт по умолчанию 7777
+2022-05-23 22:15:26,855 INFO      server.py Используется адрес по умолчанию
+2022-05-23 22:15:26,855 INFO      server.py Готовим сокет
+2022-05-23 22:15:30,439 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58933)>,), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:15:30,440 DEBUG     server.py Получено сообщение от клиента <socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58933)>: {'action': 'presence', 'time': 1653333329.8585653, 'user': {'account_name': 'Guest'}, 'message': ''}
+2022-05-23 22:15:30,442 INFO      server.py проверка сообщения от клента
+2022-05-23 22:15:30,442 DEBUG     server.py сообщение от клента правильное
+2022-05-23 22:15:30,443 DEBUG     decors.py Вызвана функция "process_client_message" с параметрами args = ({'action': 'presence', 'time': 1653333329.8585653, 'user': {'account_name': 'Guest'}, 'message': ''},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-23 22:15:30,445 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58933)>, {'response': 200, 'message': ''}), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:15:30,446 DEBUG     server.py Сообщение отправлено клиенту
+2022-05-23 22:15:39,839 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58937)>,), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:15:39,839 DEBUG     server.py Получено сообщение от клиента <socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58937)>: {'action': 'presence', 'time': 1653333335.0689378, 'user': {'account_name': 'Guest'}, 'message': 'dr3eds'}
+2022-05-23 22:15:39,841 INFO      server.py проверка сообщения от клента
+2022-05-23 22:15:39,841 DEBUG     server.py сообщение от клента правильное
+2022-05-23 22:15:39,843 DEBUG     decors.py Вызвана функция "process_client_message" с параметрами args = ({'action': 'presence', 'time': 1653333335.0689378, 'user': {'account_name': 'Guest'}, 'message': 'dr3eds'},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-23 22:15:39,844 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58937)>, {'response': 200, 'message': 'DR3EDS'}), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:15:39,845 DEBUG     server.py Сообщение отправлено клиенту
+2022-05-23 22:21:23,197 INFO      server.py Определяем параметры сервера
+2022-05-23 22:21:23,197 DEBUG     server.py Используется порт по умолчанию 7777
+2022-05-23 22:21:23,197 INFO      server.py Используется адрес по умолчанию
+2022-05-23 22:21:23,197 INFO      server.py Готовим сокет
+2022-05-23 22:21:28,305 DEBUG     decors.py Вызвана функция "get_message" с параметрами args = (<socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58990)>,), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:21:28,305 DEBUG     server.py Получено сообщение от клиента <socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58990)>: {'action': 'presence', 'time': 1653333688.246249, 'user': {'account_name': 'Guest'}, 'message': 'f'}
+2022-05-23 22:21:28,306 INFO      server.py проверка сообщения от клента
+2022-05-23 22:21:28,307 DEBUG     server.py сообщение от клента правильное
+2022-05-23 22:21:28,309 DEBUG     decors.py Вызвана функция "process_client_message" с параметрами args = ({'action': 'presence', 'time': 1653333688.246249, 'user': {'account_name': 'Guest'}, 'message': 'f'},), kwargs = {}, из модуля "__main__", из функции "main"
+2022-05-23 22:21:28,310 DEBUG     decors.py Вызвана функция "send_message" с параметрами args = (<socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58990)>, {'response': 200, 'message': 'F'}), kwargs = {}, из модуля "common.utils", из функции "main"
+2022-05-23 22:21:28,311 DEBUG     server.py Сообщение отправлено клиенту
